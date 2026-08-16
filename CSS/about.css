@@ -1,0 +1,139 @@
+.about-section {
+  width: 100%;
+  padding: 50px clamp(6%, 4vw, 10%);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: clamp(35px, 6vw, 90px);
+  background: #F7F1E7;
+  color: #3A2920;
+}
+
+.about-video-container {
+  width: 100%;
+  height: clamp(280px, 34vw, 420px);
+  padding: 7px;
+  border: 1px solid rgba(201, 154, 91, 0.6);
+  box-shadow: 0 0 6px rgba(201, 154, 91, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.about-video-container:hover {
+  transform: scale(1.025);
+}
+
+.about-video-container video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-content {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  text-align: right;
+}
+
+.about-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 0;
+  transition: transform 0.2s ease;
+  transform-origin: right center;
+}
+
+.about-label p {
+  margin: 0;
+  color: #B7833F;
+}
+
+.about-label:hover,
+.about-title:hover,
+.about-description:hover {
+  transform: translateX(-8px) scale(1.05);
+}
+
+.about-title {
+  margin: 10px 0;
+  color: #3A2920;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.12;
+  transition: transform 0.2s ease;
+  transform-origin: right center;
+}
+
+.about-title span {
+  color: #C9954A;
+}
+
+.about-description {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 0 0 auto;
+  color: #6B5A4D;
+  line-height: 1.75;
+  text-align: justify;
+  transition: transform 0.2s ease;
+  transform-origin: right center;
+}
+
+@media (max-width: 800px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 40px;
+  }
+
+  .about-video-container {
+    height: min(58vw, 380px);
+  }
+
+  .about-content {
+    max-width: 700px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .about-label {
+    align-items: flex-start;
+  }
+
+  .about-title {
+    font-size: clamp(36px, 7vw, 52px);
+    transform-origin: left center;
+  }
+
+  .about-description {
+    margin: 0;
+  }
+
+  .about-label:hover,
+  .about-title:hover,
+  .about-description:hover {
+    transform: translateX(8px);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 50px 6%;
+    gap: 30px;
+  }
+
+  .about-video-container {
+    height: 240px;
+  }
+
+  .about-title {
+    font-size: 34px;
+  }
+
+  .about-description {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}
