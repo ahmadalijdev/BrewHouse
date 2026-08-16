@@ -71,7 +71,7 @@
   flex-shrink: 0;
 }
 
-.navbar-action button {
+.navbar-action a {
   padding: 8px 12px;
   border: 1.5px solid #C89A5B;
   background: transparent;
@@ -82,7 +82,7 @@
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
 }
 
-.navbar-action button:hover {
+.navbar-action a:hover {
   background: #C89A5B;
   color: #17100A;
   transform: translateY(-2px);
@@ -97,7 +97,7 @@
     gap: 16px;
   }
 
-  .navbar-action button {
+  .navbar-action a {
     padding: 7px 9px;
     font-size: 12px;
   }

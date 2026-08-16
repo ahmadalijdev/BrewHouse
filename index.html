@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brew House</title>
+    <meta name="description" content="Brew House serves freshly brewed coffee, cold coffee, bakery treats, and satisfying food in a warm, welcoming atmosphere. Explore our menu, gallery, and contact details.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="Brew House">
+    <meta name="theme-color" content="#2b2118">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Brew House | Fresh Coffee, Bakery & Food">
+    <meta property="og:description" content="Freshly brewed coffee, delicious bakery treats, food, and good moments at Brew House.">
+    <meta property="og:site_name" content="Brew House">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Brew House | Fresh Coffee, Bakery & Food</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -14,11 +23,21 @@
     <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="CSS/gallery.css">
     <link rel="stylesheet" href="CSS/contact.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Brew House",
+      "description": "Brew House serves freshly brewed coffee, cold coffee, bakery treats, and food in a warm, welcoming atmosphere.",
+      "servesCuisine": ["Coffee", "Cafe", "Bakery"]
+    }
+    </script>
   </head>
   <body>
-    <nav class="navbar">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="navbar" aria-label="Primary navigation">
       <div class="navbar-logo">
-        <img src="Multimedia/logo.png" alt="Brew House logo">
+        <img src="Multimedia/logo.png" alt="Brew House" width="1521" height="430" decoding="async">
       </div>
       <div class="navbar-links">
         <a href="#home">HOME</a>
@@ -28,15 +47,16 @@
         <a href="#contact">CONTACT</a>
       </div>
       <div class="navbar-action">
-        <button type="button">VISIT US</button>
+        <a href="#contact">VISIT US</a>
       </div>
     </nav>
-    <main id="home" class="hero">
+    <main id="main-content">
+      <section id="home" class="hero" aria-labelledby="hero-title">
       <div class="hero-label hero-reveal hero-delay-1">
         <p>GOOD COFFEE . GOOD VIBES</p>
         <div class="gold-line"></div>
       </div>
-      <h1 class="hero-title hero-reveal hero-delay-2">
+      <h1 id="hero-title" class="hero-title hero-reveal hero-delay-2">
         Freshly <span>brewed,</span> every day
       </h1>
       <p class="hero-description hero-reveal hero-delay-3">
@@ -44,18 +64,18 @@
         your day and fuel your dreams. Made with passion and love.
       </p>
       <div class="hero-buttons hero-reveal hero-delay-4">
-        <button class="primary-button" type="button">
-          EXPLORE MENU <span>→</span>
-        </button>
-        <button class="story-button" type="button">
+        <a class="primary-button" href="#menu">
+          EXPLORE MENU <span aria-hidden="true">→</span>
+        </a>
+        <a class="story-button" href="#about">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"></path><circle cx="12" cy="12" r="10"></circle></svg>
           WATCH OUR STORY
-        </button>
+        </a>
       </div>
-    </main>
+      </section>
     <section id="about" class="about-section">
       <div class="about-video-container reveal">
-        <video src="Multimedia/307249.mp4" autoplay muted loop></video>
+        <video src="Multimedia/brewhouse-coffee-shop.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Brew House coffee shop atmosphere video"></video>
       </div>
       <div class="about-content">
         <div class="about-label reveal">
@@ -78,10 +98,10 @@
     <section class="cards-section">
       <div class="card reveal">
         <div class="up">
-          <img src="Multimedia/bean.png" class="bean" alt="Coffee beans">
+          <img src="Multimedia/bean.png" class="bean" alt="Fresh coffee beans" loading="lazy" decoding="async">
         </div>
         <div class="down">
-          <h2>Finest Beans</h2>
+          <h3>Finest Beans</h3>
           <p>
             We source only the finest quality beans from trusted farms
             around the world to deliver exceptional flavor in every cup.
@@ -91,10 +111,10 @@
       <div class="vertical-line"></div>
       <div class="card reveal reveal-delay-1">
         <div class="up">
-          <img src="Multimedia/coffee.png" alt="Fresh coffee">
+          <img src="Multimedia/coffee.png" alt="Freshly brewed coffee" loading="lazy" decoding="async">
         </div>
         <div class="down">
-          <h2>Crafted With Care</h2>
+          <h3>Crafted With Care</h3>
           <p>
             Every cup is brewed with precision, patience, and passion
             by our baristas who truly love what they do.
@@ -104,10 +124,10 @@
       <div class="vertical-line"></div>
       <div class="card reveal reveal-delay-2">
         <div class="up">
-          <img src="Multimedia/atmosphere.png" alt="Brew House atmosphere">
+          <img src="Multimedia/atmosphere.png" alt="Brew House coffee shop atmosphere" loading="lazy" decoding="async">
         </div>
         <div class="down">
-          <h2>Cozy Atmosphere</h2>
+          <h3>Cozy Atmosphere</h3>
           <p>
             A warm and welcoming space designed for relaxing, working,
             and making memories with the people you love.
@@ -123,12 +143,12 @@
           <div class="intro-line"></div>
         </div>
         <div class="footing reveal">
-          <h1>
+          <h2>
             Crafted for <span>every</span> craving.
-          </h1>
+          </h2>
           <div class="style">
             <div class="intro-line long"></div>
-            <img src="Multimedia/two-beans.svg" alt="Coffee beans decoration">
+            <img src="Multimedia/two-beans.svg" alt="Coffee bean decoration" loading="lazy" decoding="async">
             <div class="intro-line long"></div>
           </div>
         </div>
@@ -142,7 +162,7 @@
         <div class="item-col for-border reveal">
           <div class="title">
             <div class="a">
-              <img src="Multimedia/menu-hot-coffe.png" alt="Hot Coffee">
+              <img src="Multimedia/menu-hot-coffee.png" alt="Hot coffee selection" loading="lazy" decoding="async">
             </div>
             <div class="b">HOT COFFEE</div>
           </div>
@@ -186,7 +206,7 @@
         <div class="item-col reveal reveal-delay-1">
           <div class="title">
             <div class="a">
-              <img src="Multimedia/menu-cold-coffee.png" alt="Cold Coffee">
+              <img src="Multimedia/menu-cold-coffee.png" alt="Cold coffee selection" loading="lazy" decoding="async">
             </div>
             <div class="b">COLD COFFEE</div>
           </div>
@@ -230,7 +250,7 @@
         <div class="item-col reveal reveal-delay-2">
           <div class="title">
             <div class="a">
-              <img src="Multimedia/menu-bakery.png" alt="Bakery">
+              <img src="Multimedia/menu-bakery.png" alt="Fresh bakery selection" loading="lazy" decoding="async">
             </div>
             <div class="b">BAKERY</div>
           </div>
@@ -274,7 +294,7 @@
         <div class="item-col reveal reveal-delay-3">
           <div class="title">
             <div class="a">
-              <img src="Multimedia/menu-food.png" alt="Food">
+              <img src="Multimedia/menu-food.png" alt="Food selection at Brew House" loading="lazy" decoding="async">
             </div>
             <div class="b">FOOD</div>
           </div>
@@ -324,12 +344,12 @@
           <div class="intro-line"></div>
         </div>
         <div class="footing reveal">
-          <h1>
+          <h2>
             A glimpse into <span>Brew House</span> experience.
-          </h1>
+          </h2>
           <div class="style">
             <div class="intro-line long"></div>
-            <img src="Multimedia/two-beans.svg" alt="Coffee beans decoration">
+            <img src="Multimedia/two-beans.svg" alt="Coffee bean decoration" loading="lazy" decoding="async">
             <div class="intro-line long"></div>
           </div>
         </div>
@@ -337,34 +357,34 @@
       <div class="gallery-grid">
         <div class="first-row">
           <div class="reveal">
-            <img src="Multimedia/gallery (7).png" alt="Brew House interior">
+            <img src="Multimedia/brewhouse-interior-7.png" alt="Brew House coffee shop interior" loading="lazy" decoding="async">
           </div>
           <div class="grid-in-grid">
             <div class="temp reveal reveal-delay-1">
-              <img src="Multimedia/gallery (3).png" alt="Brew House interior">
+              <img src="Multimedia/brewhouse-interior-3.png" alt="Brew House coffee shop interior" loading="lazy" decoding="async">
             </div>
             <div class="temp reveal reveal-delay-2">
-              <img src="Multimedia/gallery (2).png" alt="Brew House interior">
+              <img src="Multimedia/brewhouse-interior-2.png" alt="Brew House coffee shop interior" loading="lazy" decoding="async">
             </div>
           </div>
           <div class="reveal reveal-delay-3">
-            <img src="Multimedia/gallery (5).png" alt="Brew House interior">
+            <img src="Multimedia/brewhouse-interior-5.png" alt="Brew House coffee shop interior" loading="lazy" decoding="async">
           </div>
         </div>
         <div class="second-row">
           <div class="temp reveal">
-            <img src="Multimedia/gallery (6).png" alt="Brew House interior">
+            <img src="Multimedia/brewhouse-interior-6.png" alt="Brew House coffee shop interior" loading="lazy" decoding="async">
           </div>
           <div class="temp reveal reveal-delay-1">
-            <img src="Multimedia/gallery (4).png" alt="Brew House interior">
+            <img src="Multimedia/brewhouse-interior-4.png" alt="Brew House coffee shop interior" loading="lazy" decoding="async">
           </div>
         </div>
         <div class="third-row">
           <div class="temp reveal reveal-delay-2">
-            <img src="Multimedia/gallery (1).png" alt="Brew House interior">
+            <img src="Multimedia/brewhouse-interior-1.png" alt="Brew House coffee shop interior" loading="lazy" decoding="async">
           </div>
           <div class="temp reveal reveal-delay-3">
-            <img src="Multimedia/gallery (8).png" alt="Brew House interior">
+            <img src="Multimedia/brewhouse-interior-8.png" alt="Brew House coffee shop interior" loading="lazy" decoding="async">
           </div>
         </div>
       </div>
@@ -377,7 +397,7 @@
           <span>GET IN TOUCH</span>
           <span class="contact-line"></span>
         </div>
-        <h1>We’d <span>love</span> to hear from you.</h1>
+        <h2>We’d <span>love</span> to hear from you.</h2>
         <p>
           Have a question, suggestion, or just want to say hi?<br>
           Drop us a message and we’ll get back to you as soon as we can.
@@ -391,11 +411,15 @@
           </div>
           <form>
             <div class="form-row">
-              <input type="text" name="name" placeholder="Your Name">
-              <input type="email" name="email" placeholder="Your Email">
+              <label class="sr-only" for="name">Your name</label>
+              <input id="name" type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+              <label class="sr-only" for="email">Your email</label>
+              <input id="email" type="email" name="email" placeholder="Your Email" autocomplete="email" required>
             </div>
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="message" placeholder="Your Message"></textarea>
+            <label class="sr-only" for="subject">Subject</label>
+            <input id="subject" type="text" name="subject" placeholder="Subject" required>
+            <label class="sr-only" for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
             <button type="submit">
               <span>SEND MESSAGE</span>
               <span class="button-arrow">→</span>
@@ -407,7 +431,7 @@
           <div class="contact-detail">
             <div class="detail-heading">
               <span class="detail-icon">⌖</span>
-              <h2>VISIT US</h2>
+              <h3>VISIT US</h3>
             </div>
             <p>
               Brew House, 123 Coffee Lane,<br>
@@ -417,21 +441,21 @@
           <div class="contact-detail">
             <div class="detail-heading">
               <span class="detail-icon">⌕</span>
-              <h2>CALL US</h2>
+              <h3>CALL US</h3>
             </div>
             <p>+92 300 1234567</p>
           </div>
           <div class="contact-detail">
             <div class="detail-heading">
               <span class="detail-icon">✉</span>
-              <h2>EMAIL US</h2>
+              <h3>EMAIL US</h3>
             </div>
             <p>hello@brewhouse.com</p>
           </div>
           <div class="contact-detail">
             <div class="detail-heading">
               <span class="detail-icon">◷</span>
-              <h2>OPENING HOURS</h2>
+              <h3>OPENING HOURS</h3>
             </div>
             <p>
               Monday – Sunday<br>
@@ -441,11 +465,12 @@
         </div>
       </div>
     </section>
+    </main>
     <footer class="contact-footer">
       <div class="footer-socials">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Instagram">◎</a>
-        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#contact" aria-label="Facebook">f</a>
+        <a href="#contact" aria-label="Instagram">◎</a>
+        <a href="#contact" aria-label="YouTube">▶</a>
       </div>
       <div class="footer-brand">
         <h2>BREW HOUSE</h2>
@@ -460,11 +485,11 @@
         © 2025 Brew House. All rights reserved.
       </p>
     </footer>
-    <div class="lightbox" id="lightbox">
-      <button class="lightbox-close" id="lightboxClose" type="button">&times;</button>
-      <button class="lightbox-prev" id="lightboxPrev" type="button">&#8592;</button>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image viewer">&times;</button>
+      <button class="lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">&#8592;</button>
       <img id="lightboxImage" src="" alt="Expanded gallery image">
-      <button class="lightbox-next" id="lightboxNext" type="button">&#8594;</button>
+      <button class="lightbox-next" id="lightboxNext" type="button" aria-label="Next image">&#8594;</button>
     </div>
     <script src="Main.js"></script>
   </body>

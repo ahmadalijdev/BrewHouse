@@ -92,7 +92,7 @@ let currentImageIndex = 0;
 
 function updateLightboxImage() {
   const image = lightboxImages[currentImageIndex];
-  lightboxImage.src = image.src;
+  lightboxImage.src = image.currentSrc || image.src;
   lightboxImage.alt = image.alt;
 }
 
@@ -100,11 +100,13 @@ function openLightbox(index) {
   currentImageIndex = index;
   updateLightboxImage();
   lightbox.classList.add('show');
+  lightbox.setAttribute('aria-hidden', 'false');
   document.body.classList.add('lightbox-open');
 }
 
 function closeLightbox() {
   lightbox.classList.remove('show');
+  lightbox.setAttribute('aria-hidden', 'true');
   document.body.classList.remove('lightbox-open');
 }
 
