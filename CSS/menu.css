@@ -60,6 +60,14 @@
   color: #C89A5B;
 }
 
+.hero-buttons a{
+  text-decoration: none;
+}
+
+.navbar-action a{
+  text-decoration: none;
+}
+
 .style {
   display: flex;
   align-items: center;
